@@ -1,8 +1,9 @@
 
-let allImages = [
-  'dino_green.png', 'dino_purple.png', 'dino_blue.png', 'dino_red.png',
-  'egg_blue.png', 'egg_spotted.png', 'egg_green.png', 'dino_yellow.png'
-];
+let allImages = [];
+
+for (let i = 1; i <= 16; i++) {
+    allImages.push(`${i}.png`)
+}
 
 let board = document.getElementById('game-board');
 let statusText = document.getElementById('status');
